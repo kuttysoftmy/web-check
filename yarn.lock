@@ -4174,69 +4174,98 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@sentry-internal/tracing@7.60.0":
-  version "7.60.0"
-  resolved "https://registry.npmjs.org/@sentry-internal/tracing/-/tracing-7.60.0.tgz"
-  integrity sha512-2qvxmR954H+K7u4o92sS2u+hntzshem9XwfHAqDvBe51arNbFVy8LfJTJ5fffgZq/6jXlozCO0/6aR5yLR5mBg==
+"@sentry-internal/feedback@7.120.2":
+  version "7.120.2"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/feedback/-/feedback-7.120.2.tgz#90f4e84462fdf688ba15604bdbabeaf6def09b1a"
+  integrity sha512-AAKW/Qii2qFA/jIZc9HK/CgQLfJ/9zBCqC9FF3bUTnAxzZAbJHO1TLnHqDl5k5wYtt449NrpObHORpopSk7TBg==
   dependencies:
-    "@sentry/core" "7.60.0"
-    "@sentry/types" "7.60.0"
-    "@sentry/utils" "7.60.0"
-    tslib "^2.4.1 || ^1.9.3"
+    "@sentry/core" "7.120.2"
+    "@sentry/types" "7.120.2"
+    "@sentry/utils" "7.120.2"
 
-"@sentry/browser@7.60.0":
-  version "7.60.0"
-  resolved "https://registry.npmjs.org/@sentry/browser/-/browser-7.60.0.tgz"
-  integrity sha512-WznY6zrJxCUHZns8jTvDsZw3aaHriSP+jqD+wkXZG3ceooQwFn0RkAstUuoG7YyP4Foinznn3+caeQD4ZjWaXQ==
+"@sentry-internal/replay-canvas@7.120.2":
+  version "7.120.2"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/replay-canvas/-/replay-canvas-7.120.2.tgz#49d97cb1093e355354a385b7926a326c37141a90"
+  integrity sha512-2Xm9rJxUA5/CCUYRHNH4VxG13eQpXvM05/cHQKn+pmjaPq/+3fbOHrZZM84gF1FSHjeN8Kg1igoMSekU2kavOQ==
   dependencies:
-    "@sentry-internal/tracing" "7.60.0"
-    "@sentry/core" "7.60.0"
-    "@sentry/replay" "7.60.0"
-    "@sentry/types" "7.60.0"
-    "@sentry/utils" "7.60.0"
-    tslib "^2.4.1 || ^1.9.3"
+    "@sentry/core" "7.120.2"
+    "@sentry/replay" "7.120.2"
+    "@sentry/types" "7.120.2"
+    "@sentry/utils" "7.120.2"
 
-"@sentry/core@7.60.0":
-  version "7.60.0"
-  resolved "https://registry.npmjs.org/@sentry/core/-/core-7.60.0.tgz"
-  integrity sha512-B02OlFMoqdkfDZlbQfmk7tL2vObShofk7ySd/7mp+oRdUuCvX0tyrGlwI87YJvd8YWSZOCKINs3aVYivw/b6gg==
+"@sentry-internal/tracing@7.120.2":
+  version "7.120.2"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/tracing/-/tracing-7.120.2.tgz#6f46ff48116633639dbab37633242be4d8cda1f7"
+  integrity sha512-eo2F8cP6X+vr54Mp6vu+NoQEDz0M5O24Tz8jPY0T1CpiWdwCmHb7Sln+oLXeQ3/LlWdVQihBfKDBZfBdUfsBTg==
   dependencies:
-    "@sentry/types" "7.60.0"
-    "@sentry/utils" "7.60.0"
-    tslib "^2.4.1 || ^1.9.3"
+    "@sentry/core" "7.120.2"
+    "@sentry/types" "7.120.2"
+    "@sentry/utils" "7.120.2"
 
-"@sentry/react@^7.60.0":
-  version "7.60.0"
-  resolved "https://registry.npmjs.org/@sentry/react/-/react-7.60.0.tgz"
-  integrity sha512-wmtRc0jwcqY+AM9dbOBLUCOy2rwh7MvDIXHq49Sg6r/ywOKBV0C55RnU3w7MAcmYe6aylNHC8DChHoj+phIvZw==
+"@sentry/browser@7.120.2":
+  version "7.120.2"
+  resolved "https://registry.yarnpkg.com/@sentry/browser/-/browser-7.120.2.tgz#381b55309e17212cf9724da46279362804606847"
+  integrity sha512-o5ll2Yv5MfnblbWxTvMlKK3RVXIbeJ+SPC+uw12b4j/pkrQg+/y7dyTLBXh6t0EgokSOsRUyYosQwSvxG/xs/Q==
   dependencies:
-    "@sentry/browser" "7.60.0"
-    "@sentry/types" "7.60.0"
-    "@sentry/utils" "7.60.0"
+    "@sentry-internal/feedback" "7.120.2"
+    "@sentry-internal/replay-canvas" "7.120.2"
+    "@sentry-internal/tracing" "7.120.2"
+    "@sentry/core" "7.120.2"
+    "@sentry/integrations" "7.120.2"
+    "@sentry/replay" "7.120.2"
+    "@sentry/types" "7.120.2"
+    "@sentry/utils" "7.120.2"
+
+"@sentry/core@7.120.2":
+  version "7.120.2"
+  resolved "https://registry.yarnpkg.com/@sentry/core/-/core-7.120.2.tgz#f3b14d18782120685404ec18ab44a14fc4c63234"
+  integrity sha512-eurLBFQJC7WWWYoEna25Z9I/GJjqAmH339tv52XP8sqXV7B5hRcHDcfrsT/UGHpU316M24p3lWhj0eimtCZ0SQ==
+  dependencies:
+    "@sentry/types" "7.120.2"
+    "@sentry/utils" "7.120.2"
+
+"@sentry/integrations@7.120.2":
+  version "7.120.2"
+  resolved "https://registry.yarnpkg.com/@sentry/integrations/-/integrations-7.120.2.tgz#72daaf593bca5cd1c7cbea260c24e7f43942c6c2"
+  integrity sha512-bMvL2fD3TGLM5YAUoQ2Qz6bYeVU8f7YRFNSjKNxK4EbvFgAU9j1FD6EKg0V0RNOJYnJjGIZYMmcWTXBbVTJL6w==
+  dependencies:
+    "@sentry/core" "7.120.2"
+    "@sentry/types" "7.120.2"
+    "@sentry/utils" "7.120.2"
+    localforage "^1.8.1"
+
+"@sentry/react@^7.120.1":
+  version "7.120.2"
+  resolved "https://registry.yarnpkg.com/@sentry/react/-/react-7.120.2.tgz#efb1d4c43abd4cb9c1240bea06ec6290c89067f0"
+  integrity sha512-GLvHZz0TE2pXqf4VNBTX3XUOORpp1I7ywI6Kb0XC78/eTcG0eNTEMhZR6fqBl2qFFPVCbdsuvloU2G26ZkK/vQ==
+  dependencies:
+    "@sentry/browser" "7.120.2"
+    "@sentry/core" "7.120.2"
+    "@sentry/types" "7.120.2"
+    "@sentry/utils" "7.120.2"
     hoist-non-react-statics "^3.3.2"
-    tslib "^2.4.1 || ^1.9.3"
 
-"@sentry/replay@7.60.0":
-  version "7.60.0"
-  resolved "https://registry.npmjs.org/@sentry/replay/-/replay-7.60.0.tgz"
-  integrity sha512-iVSs+mhgjeK0qqLdCqbCa1P4I6hETHCUq14pTYp0bwGrI1D/a1Ho/6wLkwXv47Gnrwaba/7JFM+IxZcN4FzfmQ==
+"@sentry/replay@7.120.2":
+  version "7.120.2"
+  resolved "https://registry.yarnpkg.com/@sentry/replay/-/replay-7.120.2.tgz#5379e1750aa9c5006d8b801d5a97379acde6f50d"
+  integrity sha512-UAw0anHwXeej0Rfx+7qZVbRb3rj3mQ0DuHqdpPTSd9WpfRGOvCfthMIKD7rfHX7GjMnPMgdmsaU8K3lpe60h+w==
   dependencies:
-    "@sentry/core" "7.60.0"
-    "@sentry/types" "7.60.0"
-    "@sentry/utils" "7.60.0"
+    "@sentry-internal/tracing" "7.120.2"
+    "@sentry/core" "7.120.2"
+    "@sentry/types" "7.120.2"
+    "@sentry/utils" "7.120.2"
 
-"@sentry/types@7.60.0":
-  version "7.60.0"
-  resolved "https://registry.npmjs.org/@sentry/types/-/types-7.60.0.tgz"
-  integrity sha512-MSEuF9YjE0j+UKdqee2AzcNlMnShVNTkCB2Wnng6Bc5hHhn4fyYeTLbuFpNxL0ffN65lxblaWx6doDsMcvRxcA==
+"@sentry/types@7.120.2":
+  version "7.120.2"
+  resolved "https://registry.yarnpkg.com/@sentry/types/-/types-7.120.2.tgz#de9e96fb64accfe5a6e4ada79b1bf366629d0f14"
+  integrity sha512-FWVoiblHQJ892GaOqdXx/5/n5XDLF28z81vJ0lCY49PMh8waz8LJ0b9RSmt9tasSDl0OQ7eUlPl1xu1jTrv1NA==
 
-"@sentry/utils@7.60.0":
-  version "7.60.0"
-  resolved "https://registry.npmjs.org/@sentry/utils/-/utils-7.60.0.tgz"
-  integrity sha512-Oc/PQqzeNDOSy4ZzVj6h9U+GEGRkg2PEVn9PC2V9/v3HDD20mndFqR/S2B5OOgDb/6pNGyz8XiZYI5rb29WFHA==
+"@sentry/utils@7.120.2":
+  version "7.120.2"
+  resolved "https://registry.yarnpkg.com/@sentry/utils/-/utils-7.120.2.tgz#931da4f7989a4e78c4f7c0607f47f9d85461a1b8"
+  integrity sha512-jgnQlw11mRfQrQRAXbq4zEd+tbYwHel5eqeS/oU6EImXRjmHNtS79nB8MHvJeQu1FMCpFs1Ymrrs5FICwS6VeQ==
   dependencies:
-    "@sentry/types" "7.60.0"
-    tslib "^2.4.1 || ^1.9.3"
+    "@sentry/types" "7.120.2"
 
 "@serverless/utils@^6.8.2":
   version "6.13.1"
@@ -12934,6 +12963,13 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
+lie@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/lie/-/lie-3.1.1.tgz#9a436b2cc7746ca59de7a41fa469b3efb76bd87e"
+  integrity sha512-RiNhHysUjhrDQntfYSfY4MU24coXXdEOgw9WGcKHNeEwffDYbF//u87M1EWaMGzuFoSbqW0C9C6lEEhDOAswfw==
+  dependencies:
+    immediate "~3.0.5"
+
 lie@~3.3.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/lie/-/lie-3.3.0.tgz"
@@ -13027,6 +13063,13 @@ loader-utils@^3.2.0:
   version "3.2.1"
   resolved "https://registry.npmjs.org/loader-utils/-/loader-utils-3.2.1.tgz"
   integrity sha512-ZvFw1KWS3GVyYBYb7qkmRM/WwL2TQQBxgCK62rlvm4WpVQ23Nb4tYjApUlfjrEGvOs7KHEsmyUn75OHZrJMWPw==
+
+localforage@^1.8.1:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/localforage/-/localforage-1.10.0.tgz#5c465dc5f62b2807c3a84c0c6a1b1b3212781dd4"
+  integrity sha512-14/H1aX7hzBBmmh7sGPd+AOMkkIrHM3Z1PAyGgZigA1H1p5O5ANnMyWzvpAETtG68/dC4pC0ncy3+PPGzXZHPg==
+  dependencies:
+    lie "3.1.1"
 
 locate-path@7.2.0, locate-path@^7.0.0, locate-path@^7.1.0:
   version "7.2.0"
@@ -18181,7 +18224,7 @@ tslib@^1.11.1, tslib@^1.8.1, tslib@^1.9.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.1, tslib@^2.0.3, tslib@^2.3.1, "tslib@^2.4.1 || ^1.9.3", tslib@^2.5.0:
+tslib@^2.0.1, tslib@^2.0.3, tslib@^2.3.1, tslib@^2.5.0:
   version "2.6.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.6.0.tgz"
   integrity sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==
